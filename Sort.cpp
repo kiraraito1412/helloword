@@ -36,7 +36,6 @@ void reverse(int array[], int n, int l) {
 }
 
 void heap_sort(int a[], int n) {
-    // int i = n / 2 - 1;
     for (n; n > 0; n--) {
         for (int i = n/2 - 1; i >= 0; i--) {
             heapify(a, n, i);
@@ -44,23 +43,7 @@ void heap_sort(int a[], int n) {
             swap(a[0], a[n-1]);
     }
 }
-    // for (int i = 0; i < n; i++) {
-    //     cout << a[i] << " ";
-    // }
-    // cout << endl;
-    
-
-    // for (j; j > 0; j--) {
-    //     swap(a[0], a[j]);
-    //     heapify(a, j, 0);
-    //    for (int i = 0; i < n; i++) {
-    //     cout << a[i] << " ";
-    // } 
-    //     cout << endl;
-    // }
-
-
-
+   
 int main()
 {
    int a [1000];
