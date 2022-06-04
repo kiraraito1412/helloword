@@ -14,10 +14,10 @@ void heapify(int a[], int n, int i) {
     int smallest = i; 
     int l = 2*i + 1;
     int r = 2*i + 2;
-    if (l < n && a[l] > a[smallest] ) {
+    if (l < n && a[l] < a[smallest] ) {
         smallest = l;
     }
-    if (r < n && a[r] > a[smallest] ) {
+    if (r < n && a[r] < a[smallest] ) {
         smallest = r;
     }
 
